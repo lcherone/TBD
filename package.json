@@ -1,0 +1,50 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "DEBUG=app:* nodemon --watch api --exec \"HOST=0.0.0.0 PORT=3000 nuxt\"",
+    "build": "nuxt build",
+    "start": "nuxt build && HOST=0.0.0.0 PORT=3000 nuxt start",
+    "precommit": "npm run lint",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "generate-jwt-certs": "cd files/ && bash generate.jwt.certs.sh",
+    "export-db": "cd files/ && bash export.db.sh",
+    "import-db": "cd files/ && bash import.db.sh"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-polyfill": "^6.26.0",
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "cross-env": "^5.0.1",
+    "debug": "^3.1.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "hashids": "^1.1.4",
+    "js-cookie": "^2.2.0",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.10",
+    "mariasql": "^0.2.6",
+    "material-design-icons-iconfont": "^3.0.3",
+    "mysql": "^2.15.0",
+    "nuxt": "latest",
+    "socket.io": "^2.1.1",
+    "source-map-support": "^0.4.15",
+    "vuetify": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.17.5"
+  }
+}
