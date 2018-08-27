@@ -68,6 +68,7 @@ class Server {
         }
         catch (err) {
           debug(err.name)
+          // issue new token
           if (err.name === 'TokenExpiredError') {
             let token = jwt.decode(socket.handshake.query.jwt)
 

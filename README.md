@@ -10,7 +10,7 @@ A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template which incl
  - Express server middleware for JWT authentication
  - Client/Server JWT store handling for protected axios calls 
  - Certificate based short expiry JWT's with auto refresh, inc socket.io tokens
- - Helper scripts for installing db, inport/export db, install and run php inbuilt server for Adminer
+ - Helper scripts for installing db, import/export db, install and run php inbuilt server for Adminer
  - Example API routes, auth and users
  - Login page with validation and error display
  - Example plugins (storage, prompt, hashid, debounce, breadcrumbs, alerts)

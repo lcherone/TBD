@@ -59,9 +59,6 @@ class Index extends BaseController {
     }
   }
 
-  post() {
-
-  }
 }
 
 // init middleware(s)

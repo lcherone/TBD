@@ -16,6 +16,7 @@ module.exports = function (req, res, next) {
       req.user = jwt.verify(req.headers['authorization'])
     } catch (err) {
       debug(err.name)
+      // issue new token
       if (err.name === 'TokenExpiredError') {
         let token = jwt.decode(req.headers['authorization'])
 

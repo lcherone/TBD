@@ -39,34 +39,6 @@ module.exports = app => {
   return Model
 }
 
-
-// module.exports = (sequelize, DataTypes) => {
-//   var User = schema
-
-//   //
-//   User.newUser = function(username, password) {
-//     return new Promise((resolve, reject) => {
-//       bcrypt.hash(password, 10, (err, hash) => {
-//         if (err) return reject(err);
-
-//         this.findOrCreate({
-//           where: { handle: username },
-//           defaults: { password: hash },
-//           raw: true
-//         }).spread(async (user, created) => {
-//           //
-//           debug('%O', user); debug('Created: ', created)
-
-//           if (created) {
-//             user = await this.findById(user.id, { raw: true })
-//           }
-
-//           resolve(user)
-//         })
-//       })
-//     })
-//   }
-
 //   //
 //   User.hashPassword = function(username, password) {
 //     return new Promise((resolve, reject) => {
@@ -85,10 +57,3 @@ module.exports = app => {
 //       })
 //     })
 //   }
-
-//   // User.associate = function(models) {
-//   //   models.User.hasMany(models.Task);
-//   // };
-
-//   return User
-// }
