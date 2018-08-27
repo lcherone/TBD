@@ -1,9 +1,0 @@
-app:
-    adamjones
-    !TSE:Ws^cf3!
-db:
-    beboyz
-    yRD2YmTxLbEMyQn8iex1oA7g8fqQ3gtt
-    
-Example video id:
-    EFDoxJ-GtqY
